@@ -250,7 +250,7 @@ version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d720bb8174ec9a7bc8f745ff821536a1d234d50fed205d2f8dc831e0577f76c9"
 dependencies = [
- "bevy_derive",
+ "bevy_derive 0.4.0",
  "bevy_ecs",
  "bevy_utils",
  "serde",
@@ -308,12 +308,21 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "918dac4225062e3517b63a186c6a4988eee167c7e90f42eeaa7a3c3943f9a1ff"
 dependencies = [
  "bevy_app",
- "bevy_derive",
+ "bevy_derive 0.4.0",
  "bevy_ecs",
  "bevy_math",
  "bevy_reflect",
  "bevy_tasks",
  "bevy_utils",
+]
+
+[[package]]
+name = "bevy_derive"
+version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
 ]
 
 [[package]]
@@ -440,7 +449,7 @@ dependencies = [
  "bevy_asset",
  "bevy_audio",
  "bevy_core",
- "bevy_derive",
+ "bevy_derive 0.4.0",
  "bevy_diagnostic",
  "bevy_dynamic_plugin",
  "bevy_ecs",
@@ -498,7 +507,7 @@ dependencies = [
  "bevy_app",
  "bevy_asset",
  "bevy_core",
- "bevy_derive",
+ "bevy_derive 0.4.0",
  "bevy_ecs",
  "bevy_math",
  "bevy_reflect",
@@ -550,7 +559,7 @@ dependencies = [
  "bevy_app",
  "bevy_asset",
  "bevy_core",
- "bevy_derive",
+ "bevy_derive 0.4.0",
  "bevy_ecs",
  "bevy_math",
  "bevy_reflect",
@@ -671,7 +680,7 @@ dependencies = [
  "bevy_app",
  "bevy_asset",
  "bevy_core",
- "bevy_derive",
+ "bevy_derive 0.4.0",
  "bevy_ecs",
  "bevy_input",
  "bevy_math",
@@ -802,6 +811,7 @@ name = "bomber_man"
 version = "0.1.0"
 dependencies = [
  "bevy",
+ "bevy_derive 0.1.0",
 ]
 
 [[package]]
