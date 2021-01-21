@@ -33,8 +33,8 @@ fn setup(
     asset_server: Res<AssetServer>,
     mut texture_atlases: ResMut<Assets<TextureAtlas>>,
 ) {
-    let texture_handle = asset_server.load("resources/sprites/walk_front.png");
-    let texture_atlas = TextureAtlas::from_grid(texture_handle, Vec2::new(10.0, 24.0), 7, 2);
+    let texture_handle = asset_server.load("resources/sprites/walk_right.png");
+    let texture_atlas = TextureAtlas::from_grid(texture_handle, Vec2::new(16.0, 24.0), 6, 1);
     let texture_atlas_handle = texture_atlases.add(texture_atlas);
     commands
         .spawn(Camera2dBundle::default())
